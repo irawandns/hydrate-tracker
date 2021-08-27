@@ -1,0 +1,248 @@
+/* --global-- */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+/* --------- */
+
+/* umur gender */
+#umur-gender-submit {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 4px;
+  position: relative;
+  background-color: #16a085;
+  border: none;
+  color: #fff;
+  padding: 5px;
+  width: 200px;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 6px;
+}
+
+#umur-gender-submit:hover {
+  background: #fff;
+  box-shadow: 0px 2px 10px 5px #1abc9c;
+  color: #000;
+}
+
+#umur-gender-submit:after {
+  content: "";
+  background: #1abc9c;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#umur-gender-submit:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+#umur-gender-submit:focus { outline:0; }
+/* --------- */
+
+.icon {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  justify-content: center;
+}
+
+/* --container-- */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("./media/bg3.jpg");
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+/* ---------- */
+
+.row {
+  display: flex;
+  /* background-color: aqua; */
+  width: 90%;
+  margin: 10px;
+}
+
+.status {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gender-umur {
+  justify-content: center;
+}
+
+.footer {
+  justify-content: center;
+}
+
+#home-logo {
+ width: 12%;
+ height: 30%;
+}
+
+.navbar {
+	width: 88%;
+	margin: 5px 0;
+	padding: 0 15px;
+	display: flex;
+	align-items: center;
+	color: white;
+  justify-content: center;
+}
+/* --umur & status-- */
+#tag {
+  background: -webkit-linear-gradient(white, #c7ecee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+/* ---------------- */
+
+
+/* --reset button-- */
+.reset {
+  justify-content: center;
+  /* background-color: transparent; */
+}
+
+.reset-button {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 4px;
+  position: relative;
+  background-color: #16a085;
+  border: none;
+  color: #fff;
+  padding: 20px;
+  width: 200px;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 4px;
+}
+
+.reset-button:hover {
+  background: #fff;
+  box-shadow: 0px 2px 10px 5px #1abc9c;
+  color: #000;
+}
+
+.reset-button:after {
+  content: "";
+  background: #1abc9c;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.reset-button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.reset-button:focus { outline:0; }
+/* -------- */
+
+.bar-holder {
+    height: 60px;
+    width: 800px;
+    background-color: darkslategray;
+    justify-content: center;
+    margin: 20px auto;
+    z-index: 0;
+    border: 5px solid black;
+    box-sizing:unset;
+}
+
+#bar-progress {
+  height: 60px;
+  /* ubah-ubah presentase disini  */
+  width: 0%;  
+  background-color: green;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* --icon bottle-- */
+.icon-botol {
+  display: flex;
+  /* width: 50%; */
+  /* height: 128px; */ 
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+/* -------- */
+.custom-input {
+  width: 128px;
+  flex-direction: column;
+}
+
+#custom-input {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 4px;
+  position: relative;
+  background-color: #16a085;
+  border: none;
+  color: #fff;
+  padding: 20px;
+  width: 128px;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 4px;
+}
+
+
+#custom-value {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 4px;
+  position: relative;
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 20px;
+  width: 128px;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 4px;
+}
+
+.gender-umur label {
+  margin: 10px 10px 10px 10px;
+}
+/* ---------- */
+
+

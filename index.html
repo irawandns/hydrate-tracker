@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+			<img src="media/water-drop.png" class="home-logo">
+      <h1 id="tag">Hydrate Tracker.</h1>
+		</div>
+
+
+      <!-- <div class="row nav">
+        <img id="home-logo" src="./media/water-drop.png">
+        <h1 class="header">WELCOME</h1>
+      </div> -->
+
+      <div class="row gender-umur">
+                <!-- gender submit -->
+        <label for="gender">Gender</label>
+        <input list="gender" name="gender" id="gender-list"/>
+        <datalist id="gender">
+          <option value="Pria">Pria</option>
+          <option value="Wanita">Wanita
+          </option>
+        </datalist>
+        <!-- <input type="submit" id="gender-submit" /> -->
+        <!-- umur submit -->
+        <label for="umur">Age</label>
+        <input type="number" name="umur" id="umur" />
+        <input onclick="onSubmit()" type="submit" id="umur-gender-submit" />
+      </div>
+
+      <div class="row status">
+        <h2 id="status">silahkan input air</h2>
+      </div>
+      <div class="row bar">
+        <div class='bar-holder'>
+            <div id='bar-progress'>
+            
+            </div>
+        </div>
+      </div>
+      <div class="row icon">
+        <div class="icon-botol">
+          <div onclick="updateProgressBar(150)" id="button1">
+            <img src="./media/glass-water.png" >
+            <div class="centered">150ml</div>
+          </div>
+          <div onclick="updateProgressBar(300)" id="button2">
+            <img src="./media/water-bottle.png" >
+            <div class="centered">300ml</div>
+          </div>
+          <div onclick="updateProgressBar(600)" id="button3">
+            <img src="./media/big-bottle.png" >
+            <div class="centered">600ml</div>
+            </div>
+          <!-- <button class="bottle-button1" type="button" background-color='aqua'></button>
+          <button class="bottle-button2" type="button" background-color='aqua'></button>
+          <button class="bottle-button3" type="button" background-color='aqua'></button> -->
+        </div>
+
+        <div class="custom-input">
+          <label for="custom-input"></label>
+          <input type="number" min="0" max="3700" maxlength="4" name="custom-input" id="custom-value" value="ml"/>
+          <input onclick="updateProgressBar(document.getElementById('custom-value').value)" type="submit" id="custom-input" />
+        </div>
+      </div>
+      <div class="row reset" >
+        <!-- <button class="reset-button" type="button" background-color='aqua'></button> -->
+        <button class="reset-button">Reset</button>
+      </div>
+
+      <div class="row footer">
+        <h5>&copy;Copyright 2021 | Built by Group 4</h5>
+      </div>
+      
+    </div>
+    
+  
+
+    <script src="script.js"></script>
+  </body>
+</html>
